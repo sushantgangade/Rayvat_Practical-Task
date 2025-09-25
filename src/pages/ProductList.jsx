@@ -127,7 +127,7 @@ export default function ProductList() {
 
                 <div className="table-responsive" data-pattern="priority-columns">
                     <table className="table table-bordered table-hover">
-                        <caption>Responsive Product Table</caption>
+                        <caption> Product Table</caption>
                         <thead>
                             <tr>
                                 <th data-priority="1">ID</th>
