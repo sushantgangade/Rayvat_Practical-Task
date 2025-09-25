@@ -26,8 +26,10 @@ export default function CRUDPage() {
     });
 
     useEffect(() => {
-        dispatch(fetchProducts());
-    }, [dispatch]);
+        if (list.length === 0) {
+            dispatch(fetchProducts());
+        }
+    }, [dispatch, list.length]);
 
     const handleAdd = () => {
         dispatch(
